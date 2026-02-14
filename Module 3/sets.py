@@ -67,3 +67,5 @@ customer_names = {"Diar", "Donart", "Alea"}
 diar = "Diar"
 
 print(diar in customer_names)
+
+
