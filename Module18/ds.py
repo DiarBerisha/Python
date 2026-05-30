@@ -42,11 +42,11 @@ if submit_button:
 
 
 st.sidebar.header("Filter Options")
-selected_author = st.sidebar.selectbox("Select Author", ["All"]+list(book_df['Author'].unique()))
-selected_year = st.sidebar.selectbox("Select Year", ["All"]+list(book_df['Year'].unique()))
-selected_genre = st.sidebar.selectbox("Select Genre", ["All"]+list(book_df['Genre'].unique()))
+selected_author = st.sidebar.selectbox("Select Author", ["All"]+list(books_df['Author'].unique()))
+selected_year = st.sidebar.selectbox("Select Year", ["All"]+list(books_df['Year'].unique()))
+selected_genre = st.sidebar.selectbox("Select Genre", ["All"]+list(books_df['Genre'].unique()))
 min_rating = st.sidebar.slider("Minimum User Rating",0.0,5.0,0.0,0.1)
-max_price = st.sidebar.slider("Max Price",0,books_Df['Price'].max(),books_df['Price'].max())
+max_price = st.sidebar.slider("Max Price",0,books_df['Price'].max(),books_df['Price'].max())
 
 
 
